@@ -5,7 +5,7 @@ import PerksContainer from "./components/PerksContainer/PerksContainer";
 import "./App.css";
 
 export default function App() {
-  const [special, setSpecial] = useState([1, 1, 1, 1, 1, 1, 1])
+  const [special, setSpecial] = useState([1, 1, 1, 1, 1, 1, 2])
 
   return (
     <div className="App">

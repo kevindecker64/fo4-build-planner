@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Strength from "../../images/special/strength.png";
 import Perception from "../../images/special/perception.png";
 import Endurance from "../../images/special/endurance.png";
@@ -9,13 +9,25 @@ import Luck from "../../images/special/luck.png";
 
 import "./SpecialStatCard.css";
 
-export default function SpecialStatCard({ stat, score, i }) {
+export default function SpecialStatCard({ stat, score, special, setSpecial, i }) {
+  const [bobblehead, setBobblehead] = useState(false);
+
+  useEffect(() => {
+    let newSpecial = [...special]
+    bobblehead ? newSpecial[i]++ : newSpecial[i]--;
+    setSpecial([...newSpecial])
+  }, [bobblehead])
+
+  function handleBobblehead(e){
+    setBobblehead(e.target.checked);
+  }
+
   return (
     <div className="special-stat-card">
       <div>
         {stat}: {score}
       </div>
-      <div>Bobblehead: <input type="checkbox" /></div>
+      <div>Bobblehead:<input type="checkbox" onChange={handleBobblehead} /></div>
       {stat === "Strength" ? (
         <img src={Strength} alt="" />
       ) : "" || stat === "Perception" ? (

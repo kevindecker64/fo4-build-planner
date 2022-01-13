@@ -29,7 +29,9 @@ export default function SpecialContainer({ special, setSpecial }) {
                   : ""
               }
               score={score}
+              special={special}
               setSpecial={setSpecial}
+              i={i}
               key={i}
             />
           );
