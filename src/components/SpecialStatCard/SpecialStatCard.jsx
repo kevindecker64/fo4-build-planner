@@ -1,11 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Strength from "../../images/special/strength.png";
-import Perception from "../../images/special/perception.png";
-import Endurance from "../../images/special/endurance.png";
-import Charisma from "../../images/special/charisma.png";
-import Intelligence from "../../images/special/intelligence.png";
-import Agility from "../../images/special/agility.png";
-import Luck from "../../images/special/luck.png";
 
 import "./SpecialStatCard.css";
 
@@ -29,19 +22,19 @@ export default function SpecialStatCard({ stat, score, special, setSpecial, i })
       </div>
       <div>Bobblehead:<input type="checkbox" onChange={handleBobblehead} /></div>
       {stat === "Strength" ? (
-        <img src={Strength} alt="" />
+        <img src="https://i.imgur.com/fiN1yfT.png" alt="" />
       ) : "" || stat === "Perception" ? (
-        <img src={Perception} alt="" />
+        <img src="https://i.imgur.com/W2eNMRY.png" alt="" />
       ) : "" || stat === "Endurance" ? (
-        <img src={Endurance} alt="" />
+        <img src="https://i.imgur.com/SQuzMfX.png" alt="" />
       ) : "" || stat === "Charisma" ? (
-        <img src={Charisma} alt="" />
+        <img src="https://i.imgur.com/OOQPo4x.png" alt="" />
       ) : "" || stat === "Intelligence" ? (
-        <img src={Intelligence} alt="" />
+        <img src="https://i.imgur.com/bA7UQX8.png" alt="" />
       ) : "" || stat === "Agility" ? (
-        <img src={Agility} alt="" />
+        <img src="https://i.imgur.com/KEBXktO.png" alt="" />
       ) : "" || stat === "Luck" ? (
-        <img src={Luck} alt="" />
+        <img src="https://i.imgur.com/R2GsTBU.png" alt="" />
       ) : (
         ""
       )}
