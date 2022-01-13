@@ -1,0 +1,10 @@
+.special-stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.special-stat-card > img {
+    width: 110px;
+    height: 110px;
+}
