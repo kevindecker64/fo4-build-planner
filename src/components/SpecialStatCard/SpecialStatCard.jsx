@@ -2,16 +2,22 @@ import React, { useEffect, useState } from "react";
 
 import "./SpecialStatCard.css";
 
-export default function SpecialStatCard({ stat, score, special, setSpecial, i }) {
+export default function SpecialStatCard({
+  stat,
+  score,
+  special,
+  setSpecial,
+  i,
+}) {
   const [bobblehead, setBobblehead] = useState(false);
 
   useEffect(() => {
-    let newSpecial = [...special]
+    let newSpecial = [...special];
     bobblehead ? newSpecial[i]++ : newSpecial[i]--;
-    setSpecial([...newSpecial])
-  }, [bobblehead])
+    setSpecial([...newSpecial]);
+  }, [bobblehead]);
 
-  function handleBobblehead(e){
+  function handleBobblehead(e) {
     setBobblehead(e.target.checked);
   }
 
@@ -20,7 +26,10 @@ export default function SpecialStatCard({ stat, score, special, setSpecial, i })
       <div>
         {stat}: {score}
       </div>
-      <div>Bobblehead:<input type="checkbox" onChange={handleBobblehead} /></div>
+      <div>
+        Bobblehead:
+        <input type="checkbox" onChange={handleBobblehead} />
+      </div>
       {stat === "Strength" ? (
         <img src="https://i.imgur.com/fiN1yfT.png" alt="" />
       ) : "" || stat === "Perception" ? (

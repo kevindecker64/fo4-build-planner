@@ -1996,4 +1996,4 @@ const Perks = [
   },
 ];
 
-export default Perks
+export default Perks;

@@ -4,14 +4,16 @@ import Perks from "../Perks/Perks.jsx";
 
 import "./PerksContainer.css";
 
-export default function PerksContainer() {
+export default function PerksContainer({ special }) {
   return (
     <div className="perks-container">
       {Perks.map((specialStat, i) => {
         return (
-          <div className="perk-column">
-            <PerkColumn specialStat={specialStat.perks} key={i} />
-          </div>
+          <PerkColumn
+            perks={specialStat.perks}
+            specialScore={special[i]}
+            key={i}
+          />
         );
       })}
     </div>
