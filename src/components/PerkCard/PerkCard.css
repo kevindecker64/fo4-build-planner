@@ -1,0 +1,8 @@
+.perk-card {
+    display: flex;
+}
+.perk-card > img {
+    width: 110px;
+    height: 110px;
+  }
+  

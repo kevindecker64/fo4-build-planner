@@ -322,7 +322,7 @@ const Perks = [
       {
         rank: 1,
         name: "Pickpocket",
-        img: "pickpocket.png",
+        img: "https://i.imgur.com/yutR0Pz.png",
         ranks: 4,
         ranked: [
           {
@@ -354,7 +354,7 @@ const Perks = [
       {
         rank: 2,
         name: "Rifleman",
-        img: "rifleman.png",
+        img: "https://i.imgur.com/KNKrQNX.png",
         ranks: 5,
         ranked: [
           {
@@ -392,7 +392,7 @@ const Perks = [
       {
         rank: 3,
         name: "Awareness",
-        img: "awareness.png",
+        img: "https://i.imgur.com/mEge4oD.png",
         ranks: 2,
         ranked: [
           {
@@ -412,7 +412,7 @@ const Perks = [
       {
         rank: 4,
         name: "Locksmith",
-        img: "locksmith.png",
+        img: "https://i.imgur.com/bdEYhzN.png",
         ranks: 4,
         ranked: [
           {
@@ -441,7 +441,7 @@ const Perks = [
       {
         rank: 5,
         name: "Demolition Expert",
-        img: "demolition-expert.png",
+        img: "https://i.imgur.com/HWgCXz5.png",
         ranks: 4,
         ranked: [
           {
@@ -473,7 +473,7 @@ const Perks = [
       {
         rank: 6,
         name: "Night Person",
-        img: "night-person.png",
+        img: "https://i.imgur.com/9HDM2j5.png",
         ranks: 3,
         ranked: [
           {
@@ -499,7 +499,7 @@ const Perks = [
       {
         rank: 7,
         name: "Refractor",
-        img: "refractor.png",
+        img: "https://i.imgur.com/ffZWo8z.png",
         ranks: 5,
         ranked: [
           {
@@ -533,7 +533,7 @@ const Perks = [
       {
         rank: 8,
         name: "Sniper",
-        img: "sniper.png",
+        img: "https://i.imgur.com/H8GOXOb.png",
         ranks: 3,
         ranked: [
           {
@@ -559,7 +559,7 @@ const Perks = [
       {
         rank: 9,
         name: "Penetrator",
-        img: "penetrator.png",
+        img: "https://i.imgur.com/fYVtp6f.png",
         ranks: 2,
         ranked: [
           {
@@ -579,7 +579,7 @@ const Perks = [
       {
         rank: 10,
         name: "Concentrated Fire",
-        img: "concentrated-fire.png",
+        img: "https://i.imgur.com/T7kW4A6.png",
         ranks: 3,
         ranked: [
           {
@@ -610,7 +610,7 @@ const Perks = [
       {
         rank: 1,
         name: "Toughness",
-        img: "toughness.png",
+        img: "https://i.imgur.com/iBLaYyr.png",
         ranks: 5,
         ranked: [
           {
@@ -644,7 +644,7 @@ const Perks = [
       {
         rank: 2,
         name: "Lead Belly",
-        img: "lead-belly.png",
+        img: "https://i.imgur.com/IGwhtsL.png",
         ranks: 3,
         ranked: [
           {
@@ -669,7 +669,7 @@ const Perks = [
       {
         rank: 3,
         name: "Life Giver",
-        img: "life-giver.png",
+        img: "https://i.imgur.com/ZuJJG7u.png",
         ranks: 3,
         ranked: [
           {
@@ -694,7 +694,7 @@ const Perks = [
       {
         rank: 4,
         name: "Chem Resistant",
-        img: "chem-resistant.png",
+        img: "https://i.imgur.com/V7Osj1r.png",
         ranks: 2,
         ranked: [
           {
@@ -713,7 +713,7 @@ const Perks = [
       {
         rank: 5,
         name: "Aquaboy",
-        img: "aquaboy.png",
+        img: "https://i.imgur.com/csfJyJl.png",
         ranks: 2,
         ranked: [
           {
@@ -732,7 +732,7 @@ const Perks = [
       {
         rank: 6,
         name: "Rad Resistant",
-        img: "rad-resistant.png",
+        img: "https://i.imgur.com/N3o50hR.png",
         ranks: 4,
         ranked: [
           {
@@ -762,7 +762,7 @@ const Perks = [
       {
         rank: 7,
         name: "Adamantium Skeleton",
-        img: "adamantium-skeleton.png",
+        img: "https://i.imgur.com/yPL1T19.png",
         ranks: 3,
         ranked: [
           {
@@ -786,7 +786,7 @@ const Perks = [
       {
         rank: 8,
         name: "Cannibal",
-        img: "cannibal.png",
+        img: "https://i.imgur.com/ZNMCUvo.png",
         ranks: 3,
         ranked: [
           {
@@ -812,7 +812,7 @@ const Perks = [
       {
         rank: 9,
         name: "Ghoulish",
-        img: "ghoulish.png",
+        img: "https://i.imgur.com/tEv3VxP.png",
         ranks: 4,
         ranked: [
           {
@@ -844,7 +844,7 @@ const Perks = [
       {
         rank: 10,
         name: "Solar Powered",
-        img: "solar-powered.png",
+        img: "https://i.imgur.com/RDokGvZ.png",
         ranks: 3,
         ranked: [
           {
@@ -873,7 +873,7 @@ const Perks = [
       {
         rank: 1,
         name: "Cap Collector",
-        img: "cap-collector.png",
+        img: "https://i.imgur.com/v3Hdlmk.png",
         ranks: 3,
         ranked: [
           {
@@ -899,7 +899,7 @@ const Perks = [
       {
         rank: 2,
         name: "Lady Killer",
-        img: "lady-killer-man-hunter.png",
+        img: "https://i.imgur.com/TDYXjxz.png",
         ranks: 3,
         ranked: [
           {
@@ -925,7 +925,7 @@ const Perks = [
       {
         rank: 3,
         name: "Lone Wanderer",
-        img: "lone-wanderer.png",
+        img: "https://i.imgur.com/ExLa1Sy.png",
         ranks: 4,
         ranked: [
           {
@@ -957,7 +957,7 @@ const Perks = [
       {
         rank: 4,
         name: "Attack Dog",
-        img: "attack-dog.png",
+        img: "https://i.imgur.com/etR8tX8.png",
         ranks: 4,
         ranked: [
           {
@@ -989,7 +989,7 @@ const Perks = [
       {
         rank: 5,
         name: "Animal Friend",
-        img: "animal-friend.png",
+        img: "https://i.imgur.com/ykG9p9o.png",
         ranks: 3,
         ranked: [
           {
@@ -1015,7 +1015,7 @@ const Perks = [
       {
         rank: 6,
         name: "Local Leader",
-        img: "local-leader.png",
+        img: "https://i.imgur.com/UaIshcm.png",
         ranks: 2,
         ranked: [
           {
@@ -1035,7 +1035,7 @@ const Perks = [
       {
         rank: 7,
         name: "Party Boy",
-        img: "party-boy-party-girl.png",
+        img: "https://i.imgur.com/dhZf0Jp.png",
         ranks: 3,
         ranked: [
           {
@@ -1060,7 +1060,7 @@ const Perks = [
       {
         rank: 8,
         name: "Inspiration",
-        img: "inspiration.png",
+        img: "https://i.imgur.com/aYxZLSH.png",
         ranks: 3,
         ranked: [
           {
@@ -1085,7 +1085,7 @@ const Perks = [
       {
         rank: 9,
         name: "Wasteland Whisperer",
-        img: "wasteland-whisperer.png",
+        img: "https://i.imgur.com/Mfnecav.png",
         ranks: 3,
         ranked: [
           {
@@ -1111,7 +1111,7 @@ const Perks = [
       {
         rank: 10,
         name: "Intimidation",
-        img: "intimidation.png",
+        img: "https://i.imgur.com/b76fNo4.png",
         ranks: 3,
         ranked: [
           {
@@ -1142,7 +1142,7 @@ const Perks = [
       {
         rank: 1,
         name: "V.A.N.S.",
-        img: "vans.png",
+        img: "https://i.imgur.com/7GwVSb1.png",
         ranks: 2,
         ranked: [
           {
@@ -1161,7 +1161,7 @@ const Perks = [
       {
         rank: 2,
         name: "Medic",
-        img: "medic.png",
+        img: "https://i.imgur.com/l3ovuMm.png",
         ranks: 4,
         ranked: [
           {
@@ -1193,7 +1193,7 @@ const Perks = [
       {
         rank: 3,
         name: "Gun Nut",
-        img: "gun-nut.png",
+        img: "https://i.imgur.com/XBrLMxC.png",
         ranks: 4,
         ranked: [
           {
@@ -1221,7 +1221,7 @@ const Perks = [
       {
         rank: 4,
         name: "Hacker",
-        img: "hacker.png",
+        img: "https://i.imgur.com/iMMHvtA.png",
         ranks: 4,
         ranked: [
           {
@@ -1251,7 +1251,7 @@ const Perks = [
       {
         rank: 5,
         name: "Scrapper",
-        img: "scrapper.png",
+        img: "https://i.imgur.com/DkgmINw.png",
         ranks: 3,
         ranked: [
           {
@@ -1277,7 +1277,7 @@ const Perks = [
       {
         rank: 6,
         name: "Science",
-        img: "science.png",
+        img: "https://i.imgur.com/EO5wuzM.png",
         ranks: 4,
         ranked: [
           {
@@ -1306,7 +1306,7 @@ const Perks = [
       {
         rank: 7,
         name: "Chemist",
-        img: "chemist.png",
+        img: "https://i.imgur.com/9Thkxt8.png",
         ranks: 4,
         ranked: [
           {
@@ -1336,7 +1336,7 @@ const Perks = [
       {
         rank: 8,
         name: "Robotics Expert",
-        img: "robotics-expert.png",
+        img: "https://i.imgur.com/QQ0iY3s.png",
         ranks: 3,
         ranked: [
           {
@@ -1362,7 +1362,7 @@ const Perks = [
       {
         rank: 9,
         name: "Nuclear Physicist",
-        img: "nuclear-physicist.png",
+        img: "https://i.imgur.com/Q0oDR84.png",
         ranks: 3,
         ranked: [
           {
@@ -1388,7 +1388,7 @@ const Perks = [
       {
         rank: 10,
         name: "Nerd Rage",
-        img: "nerd-rage.png",
+        img: "https://i.imgur.com/eetzs4D.png",
         ranks: 3,
         ranked: [
           {
@@ -1419,7 +1419,7 @@ const Perks = [
       {
         rank: 1,
         name: "Gunslinger",
-        img: "gunslinger.png",
+        img: "https://i.imgur.com/UlRCG5b.png",
         ranks: 5,
         ranked: [
           {
@@ -1457,7 +1457,7 @@ const Perks = [
       {
         rank: 2,
         name: "Commando",
-        img: "commando.png",
+        img: "https://i.imgur.com/96nwEX8.png",
         ranks: 5,
         ranked: [
           {
@@ -1495,7 +1495,7 @@ const Perks = [
       {
         rank: 3,
         name: "Sneak",
-        img: "sneak.png",
+        img: "https://i.imgur.com/2b8eI4I.png",
         ranks: 5,
         ranked: [
           {
@@ -1532,7 +1532,7 @@ const Perks = [
       {
         rank: 4,
         name: "Mister Sandman",
-        img: "mister-sandman.png",
+        img: "https://i.imgur.com/A2XakSH.png",
         ranks: 3,
         ranked: [
           {
@@ -1558,7 +1558,7 @@ const Perks = [
       {
         rank: 5,
         name: "Action Boy",
-        img: "action-boy-action-girl.png",
+        img: "https://i.imgur.com/UqTBHcJ.png",
         ranks: 3,
         ranked: [
           {
@@ -1583,7 +1583,7 @@ const Perks = [
       {
         rank: 6,
         name: "Moving Target",
-        img: "moving-target.png",
+        img: "https://i.imgur.com/as1bN3b.png",
         ranks: 3,
         ranked: [
           {
@@ -1608,7 +1608,7 @@ const Perks = [
       {
         rank: 7,
         name: "Ninja",
-        img: "ninja.png",
+        img: "https://i.imgur.com/h5ZP0gi.png",
         ranks: 3,
         ranked: [
           {
@@ -1634,7 +1634,7 @@ const Perks = [
       {
         rank: 8,
         name: "Quick Hands",
-        img: "quick-hands.png",
+        img: "https://i.imgur.com/SHjiZN3.png",
         ranks: 3,
         ranked: [
           {
@@ -1659,7 +1659,7 @@ const Perks = [
       {
         rank: 9,
         name: "Blitz",
-        img: "blitz.png",
+        img: "https://i.imgur.com/qnr721g.png",
         ranks: 2,
         ranked: [
           {
@@ -1679,7 +1679,7 @@ const Perks = [
       {
         rank: 10,
         name: "Gun Fu",
-        img: "gun-fu.png",
+        img: "https://i.imgur.com/d4NGMqy.png",
         ranks: 3,
         ranked: [
           {
@@ -1710,7 +1710,7 @@ const Perks = [
       {
         rank: 1,
         name: "Fortune Finder",
-        img: "fortune-finder.png",
+        img: "https://i.imgur.com/zOxFFOb.png",
         ranks: 4,
         ranked: [
           {
@@ -1739,7 +1739,7 @@ const Perks = [
       {
         rank: 2,
         name: "Scrounger",
-        img: "scrounger.png",
+        img: "https://i.imgur.com/VYrthWw.png",
         ranks: 4,
         ranked: [
           {
@@ -1767,7 +1767,7 @@ const Perks = [
       {
         rank: 3,
         name: "Bloody Mess",
-        img: "bloody-mess.png",
+        img: "https://i.imgur.com/z7K1Ahw.png",
         ranks: 4,
         ranked: [
           {
@@ -1797,7 +1797,7 @@ const Perks = [
       {
         rank: 4,
         name: "Mysterious Stranger",
-        img: "mysterious-stranger.png",
+        img: "https://i.imgur.com/AC7NIDG.png",
         ranks: 4,
         ranked: [
           {
@@ -1829,7 +1829,7 @@ const Perks = [
       {
         rank: 5,
         name: "Idiot Savant",
-        img: "idiot-savant.png",
+        img: "https://i.imgur.com/9tLrDXt.png",
         ranks: 3,
         ranked: [
           {
@@ -1855,7 +1855,7 @@ const Perks = [
       {
         rank: 6,
         name: "Better Criticals",
-        img: "better-criticals.png",
+        img: "https://i.imgur.com/XCkjqB2.png",
         ranks: 3,
         ranked: [
           {
@@ -1879,7 +1879,7 @@ const Perks = [
       {
         rank: 7,
         name: "Critical Banker",
-        img: "critical-banker.png",
+        img: "https://i.imgur.com/49RslT3.png",
         ranks: 4,
         ranked: [
           {
@@ -1911,7 +1911,7 @@ const Perks = [
       {
         rank: 8,
         name: "Grim Reaper's Sprint",
-        img: "grim-reapers-sprint.png",
+        img: "https://i.imgur.com/16HUmVC.png",
         ranks: 3,
         ranked: [
           {
@@ -1937,7 +1937,7 @@ const Perks = [
       {
         rank: 9,
         name: "Four Leaf Clover",
-        img: "four-leaf-clover.png",
+        img: "https://i.imgur.com/8Kyo9ut.png",
         ranks: 4,
         ranked: [
           {
@@ -1969,7 +1969,7 @@ const Perks = [
       {
         rank: 10,
         name: "Ricochet",
-        img: "ricochet.png",
+        img: "https://i.imgur.com/t6Blhmt.png",
         ranks: 3,
         ranked: [
           {

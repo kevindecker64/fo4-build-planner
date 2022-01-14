@@ -1,9 +1,10 @@
 import React from "react";
+import PerkCard from "../PerkCard/PerkCard.jsx";
 
-import "./PerkColumn.css"
+import "./PerkColumn.css";
 
-export default function PerkColumn({column}) {
-    return column.map((perk, i) => {
-        return <img className="perk-card" src={perk.img} alt=""/>
-    })
+export default function PerkColumn({ specialStat }) {
+  return specialStat.map((perk, i) => {
+    return <PerkCard perk={perk} key={i} />;
+  });
 }

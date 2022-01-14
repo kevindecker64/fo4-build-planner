@@ -1,15 +1,19 @@
 import React from "react";
 import PerkColumn from "../PerkColumn/PerkColumn.jsx";
-import Perks from "../Perks/Perks.jsx"
+import Perks from "../Perks/Perks.jsx";
+
+import "./PerksContainer.css";
 
 export default function PerksContainer() {
   return (
-    <>
-      <h2>Perks</h2>
-      {Perks.map((stat, i) => {
-        return <PerkColumn column={stat.perks} key={i} />
-        // <div className={stat.special + "-column"} key={i}>{stat.special}</div>
+    <div className="perks-container">
+      {Perks.map((specialStat, i) => {
+        return (
+          <div className="perk-column">
+            <PerkColumn specialStat={specialStat.perks} key={i} />
+          </div>
+        );
       })}
-    </>
+    </div>
   );
 }

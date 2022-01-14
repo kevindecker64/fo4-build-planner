@@ -1,4 +1,4 @@
-.special-row {
+.special-container {
     display: flex;
     justify-content: space-evenly;
 }
