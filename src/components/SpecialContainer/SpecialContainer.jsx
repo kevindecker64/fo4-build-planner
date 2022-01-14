@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import SpecialStatCard from "../SpecialStatCard/SpecialStatCard";
 
 import "./SpecialContainer.css";
 
 export default function SpecialContainer({ special, setSpecial }) {
+  const [specialPoints, setSpecialPoints] = useState(21)
+
   return (
     <div className="special-container">
       {special.map((score, i) => {
@@ -29,6 +31,8 @@ export default function SpecialContainer({ special, setSpecial }) {
             score={score}
             special={special}
             setSpecial={setSpecial}
+            specialPoints={specialPoints}
+            setSpecialPoints={setSpecialPoints}
             i={i}
             key={i}
           />

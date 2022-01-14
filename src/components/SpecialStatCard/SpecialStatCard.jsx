@@ -7,6 +7,8 @@ export default function SpecialStatCard({
   score,
   special,
   setSpecial,
+  specialPoints,
+  setSpecialPoints,
   i,
 }) {
   const [bobblehead, setBobblehead] = useState(false);
@@ -14,6 +16,9 @@ export default function SpecialStatCard({
   useEffect(() => {
     let newSpecial = [...special];
     bobblehead ? newSpecial[i]++ : newSpecial[i]--;
+    if (newSpecial[i] < 1) {
+      newSpecial[i] = 1;
+    }
     setSpecial([...newSpecial]);
   }, [bobblehead]);
 
