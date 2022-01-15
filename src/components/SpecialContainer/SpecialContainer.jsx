@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SpecialStatCard from "../SpecialStatCard/SpecialStatCard";
 
 import "./SpecialContainer.css";
