@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import SpecialBtnPlus from "../SpecialBtnPlus/SpecialBtnPlus.jsx";
+import SpecialBtnMinus from "../SpecialBtnMinus/SpecialBtnMinus.jsx";
 
 import "./SpecialStatCard.css";
 
@@ -29,7 +31,23 @@ export default function SpecialStatCard({
   return (
     <div className="special-stat-card">
       <div>
-        {stat}: {score}
+        {stat}:{" "}
+        <SpecialBtnMinus
+          i={i}
+          special={special}
+          setSpecial={setSpecial}
+          specialPoints={specialPoints}
+          setSpecialPoints={setSpecialPoints}
+          bobblehead={bobblehead}
+        />{" "}
+        {score}{" "}
+        <SpecialBtnPlus
+          i={i}
+          special={special}
+          setSpecial={setSpecial}
+          specialPoints={specialPoints}
+          setSpecialPoints={setSpecialPoints}
+        />
       </div>
       <div>
         Bobblehead:

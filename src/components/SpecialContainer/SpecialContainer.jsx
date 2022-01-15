@@ -3,9 +3,12 @@ import SpecialStatCard from "../SpecialStatCard/SpecialStatCard";
 
 import "./SpecialContainer.css";
 
-export default function SpecialContainer({ special, setSpecial }) {
-  const [specialPoints, setSpecialPoints] = useState(21)
-
+export default function SpecialContainer({
+  special,
+  setSpecial,
+  specialPoints,
+  setSpecialPoints,
+}) {
   return (
     <div className="special-container">
       {special.map((score, i) => {
