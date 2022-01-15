@@ -1,10 +1,11 @@
 import React from "react";
+import SpecialInfoCard from "../SpecialInfoCard/SpecialInfoCard.jsx";
 
 import "./SpecialStatTile.css";
 
 export default function SpecialStatTile({ stat }) {
   return (
-    <>
+    <div className="tooltip">
       {stat === "Strength" ? (
         <img src="https://i.imgur.com/fiN1yfT.png" alt="" />
       ) : "" || stat === "Perception" ? (
@@ -22,6 +23,7 @@ export default function SpecialStatTile({ stat }) {
       ) : (
         ""
       )}
-    </>
+      <SpecialInfoCard stat={stat} />
+    </div>
   );
 }
