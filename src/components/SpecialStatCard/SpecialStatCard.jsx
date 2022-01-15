@@ -11,9 +11,12 @@ export default function SpecialStatCard({
   setSpecial,
   specialPoints,
   setSpecialPoints,
+  characterLevel,
+  setCharacterLevel,
   i,
 }) {
   const [bobblehead, setBobblehead] = useState(false);
+  const [additionalSpecialPoints, setAdditionalSpecialPoints] = useState(0);
 
   useEffect(() => {
     let newSpecial = [...special];
@@ -38,6 +41,10 @@ export default function SpecialStatCard({
           setSpecial={setSpecial}
           specialPoints={specialPoints}
           setSpecialPoints={setSpecialPoints}
+          additionalSpecialPoints={additionalSpecialPoints}
+          setAdditionalSpecialPoints={setAdditionalSpecialPoints}
+          characterLevel={characterLevel}
+          setCharacterLevel={setCharacterLevel}
           bobblehead={bobblehead}
         />{" "}
         {score}{" "}
@@ -47,6 +54,10 @@ export default function SpecialStatCard({
           setSpecial={setSpecial}
           specialPoints={specialPoints}
           setSpecialPoints={setSpecialPoints}
+          additionalSpecialPoints={additionalSpecialPoints}
+          setAdditionalSpecialPoints={setAdditionalSpecialPoints}
+          characterLevel={characterLevel}
+          setCharacterLevel={setCharacterLevel}
         />
       </div>
       <div>

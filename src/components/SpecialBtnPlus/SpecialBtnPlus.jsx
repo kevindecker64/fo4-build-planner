@@ -8,16 +8,31 @@ export default function SpecialBtnPlus({
   setSpecial,
   specialPoints,
   setSpecialPoints,
+  additionalSpecialPoints,
+  setAdditionalSpecialPoints,
+  characterLevel,
+  setCharacterLevel,
 }) {
   function handlePlus() {
     if (special[i] === 10) return;
-    if (specialPoints === 0) return;
     let newSpecial = [...special];
-    newSpecial[i]++;
-    specialPoints--;
-    setSpecial([...newSpecial]);
-    setSpecialPoints(specialPoints);
+    if (specialPoints === 0) {
+      characterLevel++;
+      setCharacterLevel(characterLevel);
+      additionalSpecialPoints++;
+      setAdditionalSpecialPoints(additionalSpecialPoints);
+      newSpecial = [...special];
+      newSpecial[i]++;
+      setSpecial([...newSpecial]);
+    } else {
+      newSpecial = [...special];
+      newSpecial[i]++;
+      specialPoints--;
+      setSpecial([...newSpecial]);
+      setSpecialPoints(specialPoints);
+    }
   }
+
   return (
     <button className="special-button-plus" onClick={handlePlus}>
       +

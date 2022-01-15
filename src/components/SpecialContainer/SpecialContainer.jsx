@@ -8,6 +8,8 @@ export default function SpecialContainer({
   setSpecial,
   specialPoints,
   setSpecialPoints,
+  characterLevel,
+  setCharacterLevel,
 }) {
   return (
     <div className="special-container">
@@ -36,6 +38,8 @@ export default function SpecialContainer({
             setSpecial={setSpecial}
             specialPoints={specialPoints}
             setSpecialPoints={setSpecialPoints}
+            characterLevel={characterLevel}
+            setCharacterLevel={setCharacterLevel}
             i={i}
             key={i}
           />

@@ -8,19 +8,35 @@ export default function SpecialBtnMinus({
   setSpecial,
   specialPoints,
   setSpecialPoints,
+  additionalSpecialPoints,
+  setAdditionalSpecialPoints,
+  characterLevel,
+  setCharacterLevel,
   bobblehead,
 }) {
   function handleMinus() {
-    if (bobblehead) {
-      if (special[i] === 2) return;
-    }
-    if (special[i] === 1) return;
     let newSpecial = [...special];
-    newSpecial[i]--;
-    specialPoints++;
-    setSpecial([...newSpecial]);
-    setSpecialPoints(specialPoints);
+    if (additionalSpecialPoints === 0) {
+      if (bobblehead) {
+        if (special[i] === 2) return;
+      }
+      if (special[i] === 1) return;
+      newSpecial = [...special];
+      newSpecial[i]--;
+      specialPoints++;
+      setSpecial([...newSpecial]);
+      setSpecialPoints(specialPoints);
+    } else {
+      characterLevel--;
+      setCharacterLevel(characterLevel);
+      additionalSpecialPoints--;
+      setAdditionalSpecialPoints(additionalSpecialPoints);
+      newSpecial = [...special];
+      newSpecial[i]--;
+      setSpecial([...newSpecial]);
+    }
   }
+
   return (
     <button className="special-button-minus" onClick={handleMinus}>
       -
