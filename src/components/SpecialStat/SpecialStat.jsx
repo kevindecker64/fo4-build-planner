@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SpecialBtnPlus from "../SpecialBtnPlus/SpecialBtnPlus.jsx";
 import SpecialBtnMinus from "../SpecialBtnMinus/SpecialBtnMinus.jsx";
+import SpecialStatTile from "../SpecialStatTile/SpecialStatTile.jsx";
 
-import "./SpecialStatCard.css";
+import "./SpecialStat.css";
 
 export default function SpecialStatCard({
   stat,
@@ -64,23 +65,7 @@ export default function SpecialStatCard({
         Bobblehead:
         <input type="checkbox" onChange={handleBobblehead} />
       </div>
-      {stat === "Strength" ? (
-        <img src="https://i.imgur.com/fiN1yfT.png" alt="" />
-      ) : "" || stat === "Perception" ? (
-        <img src="https://i.imgur.com/W2eNMRY.png" alt="" />
-      ) : "" || stat === "Endurance" ? (
-        <img src="https://i.imgur.com/SQuzMfX.png" alt="" />
-      ) : "" || stat === "Charisma" ? (
-        <img src="https://i.imgur.com/OOQPo4x.png" alt="" />
-      ) : "" || stat === "Intelligence" ? (
-        <img src="https://i.imgur.com/bA7UQX8.png" alt="" />
-      ) : "" || stat === "Agility" ? (
-        <img src="https://i.imgur.com/KEBXktO.png" alt="" />
-      ) : "" || stat === "Luck" ? (
-        <img src="https://i.imgur.com/R2GsTBU.png" alt="" />
-      ) : (
-        ""
-      )}
+      <SpecialStatTile stat={stat} />
     </div>
   );
 }

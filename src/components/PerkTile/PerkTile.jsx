@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./PerkCard.css";
+import "./PerkTile.css";
 
 export default function PerkCard({ perk, specialScore, i }) {
   function createID(perk) {

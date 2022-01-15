@@ -1,5 +1,5 @@
 import React from "react";
-import SpecialStatCard from "../SpecialStatCard/SpecialStatCard";
+import SpecialStatCard from "../SpecialStat/SpecialStat";
 
 import "./SpecialContainer.css";
 

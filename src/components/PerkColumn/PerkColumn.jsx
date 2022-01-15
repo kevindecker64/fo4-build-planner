@@ -1,5 +1,5 @@
 import React from "react";
-import PerkCard from "../PerkCard/PerkCard.jsx";
+import PerkCard from "../PerkTile/PerkTile.jsx";
 
 import "./PerkColumn.css";
 
