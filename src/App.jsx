@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import SpecialContainer from "./components/SpecialContainer/SpecialContainer";
-import PerksContainer from "./components/PerksContainer/PerksContainer";
+import CharacterInfo from "./components/CharacterInfo/CharacterInfo.jsx";
+import SpecialContainer from "./components/SpecialContainer/SpecialContainer.jsx";
+import PerksContainer from "./components/PerksContainer/PerksContainer.jsx";
 
 import "./App.css";
 
@@ -12,17 +13,23 @@ export default function App() {
   return (
     <div className="App">
       <h1>Fo4 Build Planner</h1>
-      <p>S.P.E.C.I.A.L. Points Remaining: {specialPoints}</p>
-      <p>Character Level: {characterLevel}</p>
-      <SpecialContainer
-        special={special}
-        setSpecial={setSpecial}
-        specialPoints={specialPoints}
-        setSpecialPoints={setSpecialPoints}
-        characterLevel={characterLevel}
-        setCharacterLevel={setCharacterLevel}
-      />
-      <PerksContainer special={special} />
+      <div className="container">
+        <CharacterInfo
+          specialPoints={specialPoints}
+          characterLevel={characterLevel}
+        />
+        <div className="upgrade-chart">
+          <SpecialContainer
+            special={special}
+            setSpecial={setSpecial}
+            specialPoints={specialPoints}
+            setSpecialPoints={setSpecialPoints}
+            characterLevel={characterLevel}
+            setCharacterLevel={setCharacterLevel}
+          />
+          <PerksContainer special={special} />
+        </div>
+      </div>
     </div>
   );
 }
