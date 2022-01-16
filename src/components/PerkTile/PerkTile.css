@@ -10,7 +10,7 @@
   opacity: 0.2;
 }
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
 }
@@ -36,4 +36,4 @@
 
 .tooltip:hover.tooltiptext {
   display: none;
-}
+} */

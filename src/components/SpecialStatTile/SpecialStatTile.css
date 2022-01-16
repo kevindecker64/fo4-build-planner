@@ -6,7 +6,7 @@ img {
 img:hover {
   opacity: 0.7;
 }
-
+/* 
 .tooltip {
   position: relative;
   display: inline-block;
@@ -33,4 +33,4 @@ img:hover {
 
 .tooltip:hover.tooltiptext {
   display: none;
-}
+} */
