@@ -1,4 +1,5 @@
 import React from "react";
+import PerkRank from "../PerkRank/PerkRank.jsx";
 
 import "./PerkInfo.css";
 
@@ -9,9 +10,7 @@ export default function PerkInfoCard({ perk }) {
       <div className="ranks">
         {perk.ranked.map((rank, i) => {
           return (
-            <div className="rank-description" key={i}>
-              {`${rank.rank} : ${rank.description}`}
-            </div>
+            <PerkRank rank={rank} />
           );
         })}
       </div>

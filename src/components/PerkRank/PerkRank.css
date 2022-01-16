@@ -1,0 +1,14 @@
+.rank {
+    display: flex;
+    margin: 5px 0;;
+}
+
+.lvl-required {
+    font-weight: bold;
+    width: 42px;
+    margin: 0 5px 0 0;
+}
+
+.rank-description {
+    font-size: small;
+}
