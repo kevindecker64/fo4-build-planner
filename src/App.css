@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+.App {
+  margin: 15px;
+}
+
 h1 {
   text-align: center;
 }
 
 .container {
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
+  grid-template-columns: 30% 70%;
 }

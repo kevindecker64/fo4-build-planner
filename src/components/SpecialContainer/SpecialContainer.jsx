@@ -1,5 +1,5 @@
 import React from "react";
-import SpecialStatCard from "../SpecialStat/SpecialStat";
+import SpecialStat from "../SpecialStat/SpecialStat";
 
 import "./SpecialContainer.css";
 
@@ -15,7 +15,7 @@ export default function SpecialContainer({
     <div className="special-container">
       {special.map((score, i) => {
         return (
-          <SpecialStatCard
+          <SpecialStat
             stat={
               i === 0
                 ? "Strength"

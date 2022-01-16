@@ -1,4 +1,5 @@
 import React from "react";
+import PerkInfo from "../PerkInfo/PerkInfo.jsx";
 
 import "./PerkTile.css";
 
@@ -9,12 +10,15 @@ export default function PerkCard({ perk, specialScore, i }) {
   }
   return (
     <div
-      className={`perk-card ${
+      className={`perk-tile ${
         perk.rank <= specialScore ? "available" : "unavailable"
       }`}
       id={createID(perk)}
     >
-      <img src={perk.img} alt="" key={i} />
+      <div className="tooltip">
+        <img src={perk.img} alt="" key={i} />
+        <PerkInfo perk={perk} />
+      </div>
     </div>
   );
 }

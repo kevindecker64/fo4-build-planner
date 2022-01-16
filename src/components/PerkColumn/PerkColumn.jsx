@@ -1,5 +1,5 @@
 import React from "react";
-import PerkCard from "../PerkTile/PerkTile.jsx";
+import PerkTile from "../PerkTile/PerkTile.jsx";
 
 import "./PerkColumn.css";
 
@@ -7,7 +7,7 @@ export default function PerkColumn({ perks, specialScore }) {
   return (
     <div className="perk-column">
       {perks.map((perk, i) => {
-        return <PerkCard perk={perk} specialScore={specialScore} key={i} />;
+        return <PerkTile perk={perk} specialScore={specialScore} key={i} />;
       })}
     </div>
   );

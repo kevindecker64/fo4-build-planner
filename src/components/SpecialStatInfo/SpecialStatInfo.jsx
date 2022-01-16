@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./SpecialInfoCard.css";
+// import "./SpecialStatInfo.css";
 
 export default function SpecialInfoCard({ stat }) {
   return (

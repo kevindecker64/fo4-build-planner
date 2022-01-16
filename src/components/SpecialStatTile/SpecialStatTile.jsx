@@ -1,5 +1,5 @@
 import React from "react";
-import SpecialInfoCard from "../SpecialInfoCard/SpecialInfoCard.jsx";
+import SpecialStatInfo from "../SpecialStatInfo/SpecialStatInfo.jsx";
 
 import "./SpecialStatTile.css";
 
@@ -23,7 +23,7 @@ export default function SpecialStatTile({ stat }) {
       ) : (
         ""
       )}
-      <SpecialInfoCard stat={stat} />
+      <SpecialStatInfo stat={stat} />
     </div>
   );
 }

@@ -33,7 +33,7 @@ export default function SpecialStatCard({
   }
 
   return (
-    <div className="special-stat-card">
+    <div className="special-stat">
       <div>
         {stat}:{" "}
         <SpecialBtnMinus
