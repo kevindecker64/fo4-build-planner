@@ -39,7 +39,7 @@ export default function SpecialBtnMinus({
 
   return (
     <button className="special-button-minus" onClick={handleMinus}>
-      -
+      	−
     </button>
   );
 }

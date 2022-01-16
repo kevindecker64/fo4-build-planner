@@ -34,8 +34,8 @@ export default function SpecialStatCard({
 
   return (
     <div className="special-stat">
-      <div>
-        {stat}:{" "}
+      <div className="name">{stat}</div>
+      <div className="buttons">
         <SpecialBtnMinus
           i={i}
           special={special}
@@ -47,8 +47,8 @@ export default function SpecialStatCard({
           characterLevel={characterLevel}
           setCharacterLevel={setCharacterLevel}
           bobblehead={bobblehead}
-        />{" "}
-        {score}{" "}
+        />
+        <span className="score">{score}</span>
         <SpecialBtnPlus
           i={i}
           special={special}
@@ -61,7 +61,7 @@ export default function SpecialStatCard({
           setCharacterLevel={setCharacterLevel}
         />
       </div>
-      <div>
+      <div className="bobblehead">
         Bobblehead:
         <input type="checkbox" onChange={handleBobblehead} />
       </div>
