@@ -1,14 +1,18 @@
 .rank {
-    display: flex;
-    margin: 5px 0;;
+  display: flex;
+  margin: 6px 0;
+  /* background-color: chartreuse; */
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .lvl-required {
-    font-weight: bold;
-    width: 42px;
-    margin: 0 5px 0 0;
+  font-weight: bold;
+  min-width: 45px;
+  text-align: start;
 }
 
 .rank-description {
-    font-size: small;
+  text-align: start;
 }

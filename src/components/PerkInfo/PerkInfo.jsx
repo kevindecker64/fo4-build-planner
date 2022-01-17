@@ -10,7 +10,7 @@ export default function PerkInfoCard({ perk }) {
       <div className="ranks">
         {perk.ranked.map((rank, i) => {
           return (
-            <PerkRank rank={rank} />
+            <PerkRank rank={rank} key={i} />
           );
         })}
       </div>
