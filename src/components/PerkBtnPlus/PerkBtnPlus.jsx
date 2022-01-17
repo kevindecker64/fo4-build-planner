@@ -2,12 +2,12 @@ import React from "react";
 
 import "./PerkBtnPlus.css";
 
-export default function PerkBtnPlus({ test, setTest }) {
+export default function PerkBtnPlus({ perk, rank, setRank }) {
   function handlePlus() {
-    let maxRank = 5;
-    if (test === maxRank) return;
-    let newTest = test + 1;
-    setTest(newTest);
+    const maxRank = perk.ranks;
+    if (rank === maxRank) return;
+    let newRank = rank + 1;
+    setRank(newRank);
   }
   return (
     <button className="perk-button-plus" onClick={handlePlus}>

@@ -1,18 +1,14 @@
 .perk-img {
   display: flex;
+  position: relative;
 }
 
 .perk-img > img {
-  width: 110px;
-  height: 110px;
-}
-.perk-img > img:hover {
-  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+  margin: 5px
 }
 
 .unavailable > img {
-  opacity: 0.2;
-}
-.unavailable > img:hover {
   opacity: 0.2;
 }

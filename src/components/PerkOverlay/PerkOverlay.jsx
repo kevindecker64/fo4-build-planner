@@ -4,11 +4,11 @@ import PerkBtnPlus from "../PerkBtnPlus/PerkBtnPlus";
 
 import "./PerkOverlay.css";
 
-export default function PerkOverlay({ test, setTest }) {
+export default function PerkOverlay({ perk, rank, setRank }) {
   return (
     <div className="perk-overlay">
-      <PerkBtnMinus test={test} setTest={setTest} /> {test}{" "}
-      <PerkBtnPlus test={test} setTest={setTest} />
+      <PerkBtnMinus perk={perk} rank={rank} setRank={setRank} /> {rank}/{perk.ranks}{" "}
+      <PerkBtnPlus perk={perk} rank={rank} setRank={setRank} />
     </div>
   );
 }

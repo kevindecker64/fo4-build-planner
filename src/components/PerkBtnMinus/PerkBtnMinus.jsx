@@ -2,11 +2,11 @@ import React from "react";
 
 import "./PerkBtnMinus.css";
 
-export default function PerkBtnMinus({ test, setTest }) {
+export default function PerkBtnMinus({ perk, rank, setRank }) {
   function handleMinus() {
-    if (test === 0) return;
-    let newTest = test - 1;
-    setTest(newTest);
+    if (rank === 0) return;
+    let newRank = rank - 1;
+    setRank(newRank);
   }
   return (
     <button className="perk-button-minus" onClick={handleMinus}>

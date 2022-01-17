@@ -8,10 +8,10 @@
   width: 20px;
   margin: 0 0 0 10px;
   border: 0;
-  font-size: larger;
+  font-size: x-large;
   font-weight: bolder;
 }
 
 .special-button-plus:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }

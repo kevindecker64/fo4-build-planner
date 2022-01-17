@@ -8,10 +8,11 @@
   width: 20px;
   margin: 0 10px 0 0;
   border: 0;
-  font-size: larger;
+  border-radius: 5px;
+  font-size: x-large;
   font-weight: bolder;
 }
 
 .perk-button-minus:hover {
-    background-color: #d4d4d4;
+    background-color: #b3b3b3;
 }

@@ -35,7 +35,6 @@ export default function App() {
           <PerksContainer special={special} />
         </div>
       </div>
-      <PerkOverlay test={test} setTest={setTest}/>
     </div>
   );
 }
