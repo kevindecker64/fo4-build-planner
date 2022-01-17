@@ -28,12 +28,13 @@ h1 {
   background-color: #f0f0f0;
   color: rgb(0, 0, 0);
   text-align: center;
+  border: solid black 1px;
   border-radius: 6px;
   padding: 5px;
 
   position: absolute;
   z-index: 1;
-  top: -5px;
+  top: -25%;
   right: 115%;
 }
 

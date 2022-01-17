@@ -15,10 +15,14 @@ export default function PerkCard({ perk, specialScore, i }) {
       }`}
       id={createID(perk)}
     >
-      <div className="tooltip">
-        <img src={perk.img} alt="" key={i} />
-        <PerkInfo perk={perk} />
-      </div>
+      {perk.rank <= specialScore ? (
+        <div className="tooltip">
+          <img className="perk-img" src={perk.img} alt="" key={i} />
+          <PerkInfo perk={perk} />
+        </div>
+      ) : (
+        <img className="perk-img" src={perk.img} alt="" key={i} />
+      )}
     </div>
   );
 }

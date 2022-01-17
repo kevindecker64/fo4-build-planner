@@ -5,7 +5,7 @@ import "./SpecialStatTile.css";
 
 export default function SpecialStatTile({ stat }) {
   return (
-    <div className="tooltip">
+    <div className="tooltip special-img">
       {stat === "Strength" ? (
         <img src="https://i.imgur.com/fiN1yfT.png" alt="" />
       ) : "" || stat === "Perception" ? (

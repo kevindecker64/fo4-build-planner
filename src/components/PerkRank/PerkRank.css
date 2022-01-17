@@ -1,7 +1,6 @@
 .rank {
   display: flex;
   margin: 6px 0;
-  /* background-color: chartreuse; */
   border: 2px solid lightgray;
   border-radius: 5px;
   padding: 5px;
@@ -9,7 +8,7 @@
 
 .lvl-required {
   font-weight: bold;
-  min-width: 45px;
+  min-width: 48px;
   text-align: start;
 }
 
