@@ -1,0 +1,18 @@
+.character-info > div {
+    padding: 5px 0;
+    /* height: 30px; */
+}
+
+.spec-book-checkboxes {
+    display: flex;
+}
+
+.held-perk-points {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.hold-perk-point-btn {
+    padding: 0 2px;
+}

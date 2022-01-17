@@ -20,7 +20,10 @@ export default function App() {
       <h1>Fo4 Build Planner</h1>
       <div className="container">
         <CharacterInfo
+          special={special}
+          setSpecial={setSpecial}
           specialPoints={specialPoints}
+          setSpecialPoints={setSpecialPoints}
           characterLevel={characterLevel}
           setCharacterLevel={setCharacterLevel}
           heldPerkPoints={heldPerkPoints}
