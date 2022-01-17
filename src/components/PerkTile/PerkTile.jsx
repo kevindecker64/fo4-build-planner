@@ -1,28 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PerkInfo from "../PerkInfo/PerkInfo.jsx";
 
 import "./PerkTile.css";
 
-export default function PerkCard({ perk, specialScore, i }) {
+export default function PerkTile({ perk, specialScore, i }) {
+  const [available, setAvailable] = useState(false);
+
   function createID(perk) {
     const id = perk.name.toLowerCase().replace(" ", "-");
     return id;
   }
+
+  useEffect(() => {
+    if (perk.rank <= specialScore) {
+      setAvailable(true)
+    } else {
+      setAvailable(false)
+    }
+  }, [specialScore])
+
   return (
     <div
-      className={`perk-tile ${
-        perk.rank <= specialScore ? "available" : "unavailable"
+      className={`perk-img tooltip ${
+        available ? "available" : "unavailable"
       }`}
       id={createID(perk)}
     >
-      {perk.rank <= specialScore ? (
-        <div className="tooltip">
-          <img className="perk-img" src={perk.img} alt="" key={i} />
-          <PerkInfo perk={perk} />
-        </div>
-      ) : (
-        <img className="perk-img" src={perk.img} alt="" key={i} />
-      )}
+      <img src={perk.img} alt="" />
+      <PerkInfo perk={perk} />
     </div>
   );
 }

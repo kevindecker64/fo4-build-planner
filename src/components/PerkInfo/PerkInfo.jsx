@@ -3,7 +3,7 @@ import PerkRank from "../PerkRank/PerkRank.jsx";
 
 import "./PerkInfo.css";
 
-export default function PerkInfoCard({ perk }) {
+export default function PerkInfo({ perk }) {
   return (
     <div className="tooltiptext">
       <div className="perk-name">{perk.name}</div>
