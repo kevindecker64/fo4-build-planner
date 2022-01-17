@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SpecialStatInfo.css";
 
-export default function SpecialInfoCard({ stat }) {
+export default function SpecialStatInfo({ stat }) {
   return (
     <div className="tooltiptext">
       <span className="sp-stat-name">{stat}</span>

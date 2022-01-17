@@ -5,7 +5,7 @@ import SpecialStatTile from "../SpecialStatTile/SpecialStatTile.jsx";
 
 import "./SpecialStat.css";
 
-export default function SpecialStatCard({
+export default function SpecialStat({
   stat,
   score,
   special,
