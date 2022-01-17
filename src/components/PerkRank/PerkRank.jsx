@@ -22,8 +22,7 @@ export default function PerkRank({ tier, rank, characterLevel }) {
     }
   }, [rank]);
   return (
-    <div
-      className={
+    <div className={
         (available ? "rank-available" : "rank-unavailable") +
         (claimed ? "-claimed" : "")
       }

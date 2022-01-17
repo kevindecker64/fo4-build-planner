@@ -1,11 +1,3 @@
-.rank-available {
-  display: flex;
-  margin: 6px 0;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 .rank-unavailable {
   display: flex;
   margin: 6px 0;
@@ -15,11 +7,19 @@
   opacity: 0.5;
 }
 
+.rank-available {
+  display: flex;
+  margin: 6px 0;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .rank-available-claimed {
   display: flex;
   margin: 6px 0;
   border: 2px solid black;
-  background-color: limegreen;
+  background-color: rgb(38, 231, 31);
   border-radius: 5px;
   padding: 5px;
 }

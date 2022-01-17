@@ -4,7 +4,14 @@ import PerkOverlay from "../PerkOverlay/PerkOverlay.jsx";
 
 import "./PerkTile.css";
 
-export default function PerkTile({ perk, specialScore, characterLevel }) {
+export default function PerkTile({
+  perk,
+  specialScore,
+  characterLevel,
+  setCharacterLevel,
+  heldPerkPoints,
+  setHeldPerkPoints,
+}) {
   const [available, setAvailable] = useState(false);
   const [rank, setRank] = useState(0);
 
@@ -15,22 +22,41 @@ export default function PerkTile({ perk, specialScore, characterLevel }) {
 
   useEffect(() => {
     if (perk.tier <= specialScore) {
-      setAvailable(true)
+      setAvailable(true);
     } else {
-      setAvailable(false)
+      setAvailable(false);
     }
-  }, [specialScore])
+  }, [specialScore]);
+
+  useEffect(() => {
+    if (!available) {
+      const newHeldPerkPoints = rank;
+      const newRank = 0;
+      setHeldPerkPoints(newHeldPerkPoints);
+      setRank(newRank);
+    }
+  }, [available]);
 
   return (
     <div
-      className={`perk-img tooltip ${
-        available ? "available" : "unavailable"
-      }`}
+      className={`perk-img tooltip ${available ? "available" : "unavailable"}`}
       id={createID(perk)}
     >
       <img src={perk.img} alt="" />
-      <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel}/>
-      {available ? <PerkOverlay perk={perk} rank={rank} setRank={setRank} characterLevel={characterLevel}/> : ""}
+      <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel} />
+      {available ? (
+        <PerkOverlay
+          perk={perk}
+          rank={rank}
+          setRank={setRank}
+          characterLevel={characterLevel}
+          setCharacterLevel={setCharacterLevel}
+          heldPerkPoints={heldPerkPoints}
+          setHeldPerkPoints={setHeldPerkPoints}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
