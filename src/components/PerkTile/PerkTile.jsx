@@ -4,7 +4,7 @@ import PerkOverlay from "../PerkOverlay/PerkOverlay.jsx";
 
 import "./PerkTile.css";
 
-export default function PerkTile({ perk, specialScore, i }) {
+export default function PerkTile({ perk, specialScore, characterLevel }) {
   const [available, setAvailable] = useState(false);
   const [rank, setRank] = useState(0);
 
@@ -14,7 +14,7 @@ export default function PerkTile({ perk, specialScore, i }) {
   }
 
   useEffect(() => {
-    if (perk.rank <= specialScore) {
+    if (perk.tier <= specialScore) {
       setAvailable(true)
     } else {
       setAvailable(false)
@@ -29,8 +29,8 @@ export default function PerkTile({ perk, specialScore, i }) {
       id={createID(perk)}
     >
       <img src={perk.img} alt="" />
-      <PerkInfo perk={perk} />
-      {available ? <PerkOverlay perk={perk} rank={rank} setRank={setRank}/> : ""}
+      <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel}/>
+      {available ? <PerkOverlay perk={perk} rank={rank} setRank={setRank} characterLevel={characterLevel}/> : ""}
     </div>
   );
 }

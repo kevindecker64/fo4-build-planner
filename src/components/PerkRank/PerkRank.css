@@ -1,7 +1,25 @@
-.rank {
+.rank-available {
   display: flex;
   margin: 6px 0;
   border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.rank-unavailable {
+  display: flex;
+  margin: 6px 0;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0.5;
+}
+
+.rank-available-claimed {
+  display: flex;
+  margin: 6px 0;
+  border: 2px solid black;
+  background-color: limegreen;
   border-radius: 5px;
   padding: 5px;
 }

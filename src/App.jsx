@@ -32,7 +32,7 @@ export default function App() {
             characterLevel={characterLevel}
             setCharacterLevel={setCharacterLevel}
           />
-          <PerksContainer special={special} />
+          <PerksContainer special={special} characterLevel={characterLevel}/>
         </div>
       </div>
     </div>
