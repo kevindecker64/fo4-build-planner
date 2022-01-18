@@ -12,7 +12,6 @@ HTML, CSS, JavaScript, React
 
 ## Play Here
 
-(coming soon)
 [Click Here to Use Now](https://kevindecker64.github.io/fo4-build-planner/)
 
 ---
