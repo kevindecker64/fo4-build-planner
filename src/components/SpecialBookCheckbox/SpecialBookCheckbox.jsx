@@ -13,21 +13,13 @@ export default function SpecialBookCheckbox({
   const [active, setActive] = useState(false);
 
   const stat =
-    i === 0
-      ? "St"
-      : "" || i === 1
-      ? "Pe"
-      : "" || i === 2
-      ? "En"
-      : "" || i === 3
-      ? "Ch"
-      : "" || i === 4
-      ? "In"
-      : "" || i === 5
-      ? "Ag"
-      : "" || i === 6
-      ? "Lu"
-      : "";
+    i === 0 ? "St" : "" || 
+      i === 1 ? "Pe" : "" || 
+      i === 2 ? "En" : "" || 
+      i === 3 ? "Ch" : "" || 
+      i === 4 ? "In" : "" || 
+      i === 5 ? "Ag" : "" || 
+      i === 6 ? "Lu" : "";
 
   useEffect(() => {
     active ? setSpecialBook(stat) : setSpecialBook(false);

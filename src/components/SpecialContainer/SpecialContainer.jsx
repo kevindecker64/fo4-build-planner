@@ -17,21 +17,13 @@ export default function SpecialContainer({
         return (
           <SpecialStat
             stat={
-              i === 0
-                ? "Strength"
-                : "" || i === 1
-                ? "Perception"
-                : "" || i === 2
-                ? "Endurance"
-                : "" || i === 3
-                ? "Charisma"
-                : "" || i === 4
-                ? "Intelligence"
-                : "" || i === 5
-                ? "Agility"
-                : "" || i === 6
-                ? "Luck"
-                : ""
+              i === 0 ? "Strength" : "" || 
+              i === 1 ? "Perception" : "" || 
+              i === 2 ? "Endurance" : "" || 
+              i === 3 ? "Charisma" : "" || 
+              i === 4 ? "Intelligence" : "" || 
+              i === 5 ? "Agility" : "" || 
+              i === 6 ? "Luck" : ""
             }
             score={score}
             special={special}

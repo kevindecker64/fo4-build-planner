@@ -14,7 +14,7 @@ export default function SpecialBtnPlus({
   setCharacterLevel,
 }) {
   function handlePlus() {
-    if (special[i] === 10) return;
+    if (special[i] >= 10) return;
     let newSpecial = [...special];
     if (specialPoints === 0) {
       characterLevel++;

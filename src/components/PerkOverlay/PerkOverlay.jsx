@@ -23,8 +23,10 @@ export default function PerkOverlay({
         setCharacterLevel={setCharacterLevel}
         heldPerkPoints={heldPerkPoints}
         setHeldPerkPoints={setHeldPerkPoints}
-      />{" "}
-      {rank}/{perk.ranks}{" "}
+      />
+
+      {`${rank}/${perk.ranks}`}
+
       <PerkBtnPlus
         perk={perk}
         rank={rank}

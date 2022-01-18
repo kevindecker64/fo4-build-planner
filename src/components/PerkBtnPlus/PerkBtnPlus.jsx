@@ -26,6 +26,7 @@ export default function PerkBtnPlus({
       setCharacterLevel(newCharacterLevel);
     }
   }
+  
   return (
     <button className="perk-button-plus" onClick={handlePlus}>
       +

@@ -43,7 +43,9 @@ export default function PerkTile({
       id={createID(perk)}
     >
       <img src={perk.img} alt="" />
+
       <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel} />
+      
       {available ? (
         <PerkOverlay
           perk={perk}
@@ -54,9 +56,7 @@ export default function PerkTile({
           heldPerkPoints={heldPerkPoints}
           setHeldPerkPoints={setHeldPerkPoints}
         />
-      ) : (
-        ""
-      )}
+      ) : ("")}
     </div>
   );
 }

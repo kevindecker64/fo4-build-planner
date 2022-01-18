@@ -35,6 +35,7 @@ export default function SpecialStat({
   return (
     <div className="special-stat">
       <div className="name">{stat}</div>
+
       <div className="buttons">
         <SpecialBtnMinus
           i={i}
@@ -48,7 +49,9 @@ export default function SpecialStat({
           setCharacterLevel={setCharacterLevel}
           bobblehead={bobblehead}
         />
+
         <span className="score">{score}</span>
+
         <SpecialBtnPlus
           i={i}
           special={special}
@@ -61,10 +64,12 @@ export default function SpecialStat({
           setCharacterLevel={setCharacterLevel}
         />
       </div>
+
       <div className="bobblehead">
         Bobblehead:
         <input type="checkbox" onChange={handleBobblehead} />
       </div>
+
       <SpecialStatTile stat={stat} />
     </div>
   );

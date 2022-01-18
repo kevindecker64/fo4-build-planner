@@ -10,7 +10,12 @@ export default function PerkInfo({ perk, rank, characterLevel }) {
       <div className="ranks">
         {perk.ranked.map((tier, i) => {
           return (
-            <PerkRank tier={tier} rank={rank} characterLevel={characterLevel} key={i} />
+            <PerkRank
+              tier={tier}
+              rank={rank}
+              characterLevel={characterLevel}
+              key={i}
+            />
           );
         })}
       </div>

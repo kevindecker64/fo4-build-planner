@@ -18,6 +18,7 @@ export default function PerkBtnMinus({
     const newHeldPerkPoints = heldPerkPoints + 1;
     setHeldPerkPoints(newHeldPerkPoints);
   }
+
   return (
     <button className="perk-button-minus" onClick={handleMinus}>
       −

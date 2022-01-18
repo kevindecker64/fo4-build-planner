@@ -50,6 +50,7 @@ export default function CharacterInfo({
           Hold Perk Point
         </button>
       </div>
+
       <div>
         Active Perks:
         <div>&nbsp;&nbsp;-- feature coming soon --</div>
