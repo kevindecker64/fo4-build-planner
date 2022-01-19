@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fo4-build-planner/static/css/main.256d7d44.css",
-    "main.js": "/fo4-build-planner/static/js/main.e856be50.js",
+    "main.js": "/fo4-build-planner/static/js/main.29c85416.js",
     "index.html": "/fo4-build-planner/index.html",
     "main.256d7d44.css.map": "/fo4-build-planner/static/css/main.256d7d44.css.map",
-    "main.e856be50.js.map": "/fo4-build-planner/static/js/main.e856be50.js.map"
+    "main.29c85416.js.map": "/fo4-build-planner/static/js/main.29c85416.js.map"
   },
   "entrypoints": [
     "static/css/main.256d7d44.css",
-    "static/js/main.e856be50.js"
+    "static/js/main.29c85416.js"
   ]
 }
