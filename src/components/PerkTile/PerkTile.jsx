@@ -32,7 +32,7 @@ export default function PerkTile({
 
   useEffect(() => {
     if (!available) {
-      const newHeldPerkPoints = rank;
+      const newHeldPerkPoints = rank + heldPerkPoints;
       const newRank = 0;
       setHeldPerkPoints(newHeldPerkPoints);
       setRank(newRank);
