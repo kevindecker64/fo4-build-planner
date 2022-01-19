@@ -6,18 +6,23 @@
 }
 
 .stat-name {
-  /* font-weight: inherit; */
+  font-weight: bolder;
 }
 
 .buttons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* font-size: inherit; */
-  /* font-weight: inherit; */
+  font-weight: bold;
   width: 100%;
 }
 
+.score {
+  font-weight: normal;
+}
+
 .bobblehead {
-  /* font-weight: normal; */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }

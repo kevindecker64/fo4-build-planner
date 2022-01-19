@@ -13,13 +13,6 @@
   flex-direction: column;
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -33,8 +26,8 @@
   border: solid black 1px;
   border-radius: 6px;
   padding: 5px;
-  
-  /* width: 300px; */
+
+  width: 300px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -47,4 +40,135 @@
 
 .tooltip:hover.tooltiptext {
   display: none;
-} 
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 135px;
+    position: absolute;
+    z-index: 1;
+    top: -125%;
+    right: 100%;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip:hover.tooltiptext {
+    display: none;
+  }
+
+  .tooltip-left {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-left .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 135px;
+    position: absolute;
+    z-index: 1;
+    top: -125%;
+    left: 100%;
+  }
+
+  .tooltip-left:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip-left:hover.tooltiptext {
+    display: none;
+  }
+
+  .tooltip-bottom {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-bottom .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 135px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 100%;
+  }
+
+  .tooltip-bottom:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip-bottom:hover.tooltiptext {
+    display: none;
+  }
+
+  .tooltip-bottom-left {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-bottom-left .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 135px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 100%;
+  }
+
+  .tooltip-bottom-left:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltip-bottom-left:hover.tooltiptext {
+    display: none;
+  }
+}

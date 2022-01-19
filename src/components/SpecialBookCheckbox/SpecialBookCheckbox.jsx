@@ -13,13 +13,13 @@ export default function SpecialBookCheckbox({
   const [active, setActive] = useState(false);
 
   const stat =
-    i === 0 ? "St" : "" || 
-      i === 1 ? "Pe" : "" || 
-      i === 2 ? "En" : "" || 
-      i === 3 ? "Ch" : "" || 
-      i === 4 ? "In" : "" || 
-      i === 5 ? "Ag" : "" || 
-      i === 6 ? "Lu" : "";
+    i === 0 ? "Str" : "" || 
+      i === 1 ? "Per" : "" || 
+      i === 2 ? "End" : "" || 
+      i === 3 ? "Cha" : "" || 
+      i === 4 ? "Int" : "" || 
+      i === 5 ? "Agi" : "" || 
+      i === 6 ? "Luc" : "";
 
   useEffect(() => {
     active ? setSpecialBook(stat) : setSpecialBook(false);
@@ -38,7 +38,7 @@ export default function SpecialBookCheckbox({
   }
 
   return (
-    <div key={i}>
+    <div className="stat-checkbox" key={i}>
       {`${stat}:`}
       <input
         type="checkbox"

@@ -23,12 +23,18 @@ export default function CharacterInfo({
 
   return (
     <div className="character-info">
-      <div>Character Level: {characterLevel}</div>
-      <div>S.P.E.C.I.A.L. Points: {specialPoints}</div>
+      <div>
+        <span className="row-title">Character Level: </span>
+        {characterLevel}
+      </div>
+      <div>
+        <span className="row-title">S.P.E.C.I.A.L. Points: </span>
+        {specialPoints}
+      </div>
       <div className="special-book">
-        S.P.E.C.I.A.L. Book:
+        <span className="row-title">S.P.E.C.I.A.L. Book:</span>
         <div className="spec-book-checkboxes">
-        &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
           {special.map((score, i) => {
             return (
               <SpecialBookCheckbox
@@ -46,7 +52,10 @@ export default function CharacterInfo({
       </div>
 
       <div className="held-perk-points">
-        Perk Points: {heldPerkPoints}
+        <div>
+          <span className="row-title">Perk Points: </span>
+          {heldPerkPoints}
+        </div>
         <button className="hold-perk-point-btn" onClick={handleHoldPerkPoint}>
           Hold Perk Point
         </button>
