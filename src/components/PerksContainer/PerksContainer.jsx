@@ -22,6 +22,7 @@ export default function PerksContainer({
             setCharacterLevel={setCharacterLevel}
             heldPerkPoints={heldPerkPoints}
             setHeldPerkPoints={setHeldPerkPoints}
+            columnIdx={i}
             key={i}
           />
         );

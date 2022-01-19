@@ -70,7 +70,7 @@ export default function SpecialStat({
         <input type="checkbox" onChange={handleBobblehead} />
       </div>
 
-      <SpecialStatTile stat={stat} />
+      <SpecialStatTile stat={stat} i={i} />
     </div>
   );
 }
