@@ -33,3 +33,50 @@
 .rank-description {
   text-align: start;
 }
+
+.format-for-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .rank-unavailable {
+    display: inline-block;
+    margin: 6px 0;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.5;
+  }
+  
+  .rank-available {
+    display: inline-block;
+    margin: 6px 0;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .rank-available-claimed {
+    display: inline-block;
+    margin: 6px 0;
+    border: 2px solid black;
+    background-color: rgb(38, 231, 31);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .lvl-required {
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  .rank-description {
+    display: block;
+    font-size: 12px;
+  }
+  
+  /* .format-for-mobile {
+    display: block;
+  } */
+}

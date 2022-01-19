@@ -1,4 +1,5 @@
-.special-img > img {
-  width: 110px;
-  height: 110px;
+.special-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 5%;
 }

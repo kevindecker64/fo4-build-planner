@@ -10,6 +10,7 @@ export default function PerkColumn({
   setCharacterLevel,
   heldPerkPoints,
   setHeldPerkPoints,
+  columnIdx,
 }) {
   return (
     <div className="perk-column">
@@ -22,6 +23,8 @@ export default function PerkColumn({
             setCharacterLevel={setCharacterLevel}
             heldPerkPoints={heldPerkPoints}
             setHeldPerkPoints={setHeldPerkPoints}
+            columnIdx={columnIdx}
+            i={i}
             key={i}
           />
         );

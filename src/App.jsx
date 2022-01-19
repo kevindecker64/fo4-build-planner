@@ -13,8 +13,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Fo4 Build Planner</h1>
-
       <div className="container">
         <CharacterInfo
           special={special}
@@ -43,6 +41,10 @@ export default function App() {
             heldPerkPoints={heldPerkPoints}
             setHeldPerkPoints={setHeldPerkPoints}
           />
+        </div>
+
+        <div>
+          Active Perks: -- feature coming soon --
         </div>
       </div>
     </div>

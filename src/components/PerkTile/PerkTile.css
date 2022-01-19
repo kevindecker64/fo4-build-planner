@@ -1,14 +1,9 @@
 .perk-img {
-  display: flex;
-  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 5%;
 }
 
-.perk-img > img {
-  width: 100px;
-  height: 100px;
-  margin: 5px
-}
-
-.unavailable > img {
+.unavailable {
   opacity: 0.2;
 }

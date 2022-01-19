@@ -1,17 +1,26 @@
 .character-info > div {
-    padding: 5px 0;
+  padding: 5px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .special-book {
+    display: flex;
+  }
 }
 
 .spec-book-checkboxes {
-    display: flex;
+  display: flex;
 }
 
 .held-perk-points {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hold-perk-point-btn {
-    padding: 0 2px;
+  
+}
+
+.row-title {
+  font-weight: bold;
 }

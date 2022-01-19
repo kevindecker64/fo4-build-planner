@@ -3,45 +3,182 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.App {
-  margin: 15px;
-}
-
-h1 {
-  text-align: center;
-}
-
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
 }
 
-.tooltip {
+.upgrade-chart {
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltip,
+.tooltip-left,
+.tooltip-bottom,
+.tooltip-left-bottom {
   position: relative;
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltiptext,
+.tooltip-left .tooltiptext {
   visibility: hidden;
-  width: 300px;
   background-color: #f0f0f0;
   color: rgb(0, 0, 0);
   text-align: center;
   border: solid black 1px;
   border-radius: 6px;
   padding: 5px;
-
   position: absolute;
   z-index: 1;
+
+  width: 300px;
   top: 0;
-  right: 115%;
+  right: 105%;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-bottom .tooltiptext,
+.tooltip-left-bottom .tooltiptext {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: solid black 1px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+
+  width: 300px;
+  top: auto;
+  bottom: 0;
+  right: 105%;
+}
+
+
+.tooltip:hover .tooltiptext,
+.tooltip-left:hover .tooltiptext,
+.tooltip-bottom:hover .tooltiptext,
+.tooltip-left-bottom:hover .tooltiptext {
   visibility: visible;
 }
 
-.tooltip:hover.tooltiptext {
+.tooltiptext:hover {
   display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tooltip .tooltiptext,
+  .tooltip-left .tooltiptext,
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: -25%;
+    right: 100%;
+  }
+
+  .tooltip-left .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    left: 100%;
+  }
+
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    top: auto;
+    bottom: 0;
+    right: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tooltip .tooltiptext,
+  .tooltip-left .tooltiptext,
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 225px;
+    position: absolute;
+    z-index: 1;
+    top: -65%;
+    right: 100%;
+  }
+
+  .tooltip-left .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    left: 100%;
+  }
+
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    top: auto;
+    bottom: 0;
+    right: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .tooltip .tooltiptext,
+  .tooltip-left .tooltiptext,
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    visibility: hidden;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 6px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 13px;
+
+    width: 135px;
+    position: absolute;
+    z-index: 1;
+    top: -125%;
+    right: 100%;
+  }
+
+  .tooltip-left .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    left: 100%;
+  }
+
+  .tooltip-bottom .tooltiptext,
+  .tooltip-left-bottom .tooltiptext {
+    top: auto;
+    bottom: 0;
+    right: 100%;
+  }
 }

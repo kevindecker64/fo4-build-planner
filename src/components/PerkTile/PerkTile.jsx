@@ -11,6 +11,8 @@ export default function PerkTile({
   setCharacterLevel,
   heldPerkPoints,
   setHeldPerkPoints,
+  columnIdx,
+  i,
 }) {
   const [available, setAvailable] = useState(false);
   const [rank, setRank] = useState(0);
@@ -39,10 +41,10 @@ export default function PerkTile({
 
   return (
     <div
-      className={`perk-img tooltip ${available ? "available" : "unavailable"}`}
+      className={`tooltip${columnIdx < 3 ? "-left" : ""}${i > 6 ? "-bottom" : ""}`}
       id={createID(perk)}
     >
-      <img src={perk.img} alt="" />
+      <img className={`perk-img ${available ? "available" : "unavailable"}`} src={perk.img} alt="" />
 
       <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel} />
       

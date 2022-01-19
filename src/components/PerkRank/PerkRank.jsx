@@ -28,8 +28,9 @@ export default function PerkRank({ tier, rank, characterLevel }) {
         (claimed ? "-claimed" : "")
       }
     >
-      <div className="lvl-required">Lv:{tier.level}</div>
-      <div className="rank-description">{tier.description}</div>
+      <span className="lvl-required">Lv: {tier.level}</span>
+      {/* <span className="format-for-mobile">&nbsp;-&nbsp;</span> */}
+      <span className="rank-description">{tier.description}</span>
     </div>
   );
 }

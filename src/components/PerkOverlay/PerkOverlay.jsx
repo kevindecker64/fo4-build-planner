@@ -25,7 +25,7 @@ export default function PerkOverlay({
         setHeldPerkPoints={setHeldPerkPoints}
       />
 
-      {`${rank}/${perk.ranks}`}
+      {rank}<span className="total-ranks">{`/${perk.ranks}`}</span>
 
       <PerkBtnPlus
         perk={perk}
