@@ -34,7 +34,7 @@ export default function SpecialStat({
 
   return (
     <div className="special-stat">
-      <div className="name">{stat}</div>
+      <div className="stat-name">{stat.split("").splice(0, 3).join("")}</div>
 
       <div className="buttons">
         <SpecialBtnMinus
@@ -66,7 +66,7 @@ export default function SpecialStat({
       </div>
 
       <div className="bobblehead">
-        Bobblehead:
+        Bh:
         <input type="checkbox" onChange={handleBobblehead} />
       </div>
 

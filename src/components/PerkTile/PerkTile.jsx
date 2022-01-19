@@ -39,10 +39,10 @@ export default function PerkTile({
 
   return (
     <div
-      className={`perk-img tooltip ${available ? "available" : "unavailable"}`}
+      className={`tooltip `}
       id={createID(perk)}
     >
-      <img src={perk.img} alt="" />
+      <img className={`perk-img ${available ? "available" : "unavailable"}`} src={perk.img} alt="" />
 
       <PerkInfo perk={perk} rank={rank} characterLevel={characterLevel} />
       

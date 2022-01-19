@@ -3,16 +3,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 140px;
 }
 
-.name {
-  font-weight: bold;
+.stat-name {
+  /* font-weight: inherit; */
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
-  font-weight: bolder;
-  font-size: large;
+  justify-content: space-evenly;
+  align-items: center;
+  /* font-size: inherit; */
+  /* font-weight: inherit; */
+  width: 100%;
+}
+
+.bobblehead {
+  /* font-weight: normal; */
 }
